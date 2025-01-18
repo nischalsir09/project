@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url('./aboutusphoto/cursor.png') , auto;
+}
+/* meet our team container */
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 19px;
+
+}
+.main {
+    margin: 9rem;
+    overflow: hidden;
+    display: flex;
+    columns: 4;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.main .container {
+    background-color: #d9cab3;
+    position: relative;
+    max-width: 50rem;
+    flex: 1 1 0%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 13px 13px;
+    margin: 10px 10px;
+    border-radius: 6%;
+}
+
+.main .container img {
+    width: 17rem;
+    height: 17rem;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding: 2px 8px;
+    border-radius: 100%;
+}
+
+/* .main .container:hover img {
+   transform: scale(1,1);
+} */
+.main .container .text {
+    padding: 12px 0px;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.main .container .text .social-media{
+    display: flex;
+    gap: 3rem;
+}
+.main .container .text .social-media:hover{
+    transform: scale(1,1);
+}
+.main .container .text .social-media i{
+    margin-top: 15px;
+    margin-right:  12px;
+}
+
+.main .container .text h3 {
+    margin: 6px 0px;
+}
+/* back side container css */
+.main .container .back {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #9a8058;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: inherit;
+}
+.main .container:hover .back {
+    opacity: 1;
+    visibility: visible;
+}
+.main .container .back  h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top:20%;
+    color: white;
+
+}
+.main .container .back h3 span{
+    margin-right: 6px;
+}
+
+.main .container .back p{
+    color: white;
+    text-align: center;
+    margin: 10% 3%;
+    padding: 0px 6px;
+}
+
+
+
+
+/* 
+comanyinfo css comes here */
+
+
+.company-info{
+    background-image: url('../aboutusphoto/background1.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    padding:10rem;
+    margin-bottom: 17rem;
+    font-size: large;
+}
+
+.company-info .heading h1{
+    margin: 12px 0px;
+    padding: 0;
+    text-align: left;
+}
+.company-info .heading p{
+    margin: 12px 0px;
+    max-width:55rem;
+}
+.company-info .heading .contact h5{
+    font-size: 2rem;
+}
+.company-info .heading .contact p i{
+    margin-right: 9px;
+}
+
+.company-info img{
+    width: 35%;
+    height: 35%;
+    object-fit: cover;
+    border-top-left-radius:20% ;
+    border-bottom-right-radius: 20%;
+    filter: drop-shadow( 0 9px 10px rgba(0, 0, 0, 0.4));
+    transition: transform 0.3s,filter 0.3s ;
+}
+.company-info img:hover{
+  transform: scale(1.1);
+  filter: drop-shadow( 0 9px 10px rgba(0, 0, 0, 1.4));
+}
+
+.company-info .heading h1 span{
+    color: #6d9886;
+}
+
+
+.company-info .social-media{
+    display: grid;
+    margin-left: 2rem;
+
+}
+.company-info .social-media i{
+    color: #212121;
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+    transition: transform 0.3s;
+}
+.company-info .social-media i:hover{
+    transform: scale(1.5);
+}
+
+
+
+/* formhandling css */
+
+.whole-form {
+    font-size: large;
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.whole-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.whole-form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.whole-form p {
+    text-align: center;
+    margin-bottom: 1.9rem;
+    color: #666;
+}
+
+.whole-form label {
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.whole-form input,
+.whole-form select,
+.whole-form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.whole-form input:focus,
+.whole-form select:focus,
+.whole-form textarea:focus {
+    border-color: #6d9886;
+    outline: none;
+    box-shadow: 0 0 5px #6d9886;
+}
+
+.whole-form button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #6d9886;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.whole-form button:hover {
+    background-color: #4e6f61;
+}
+/*  */

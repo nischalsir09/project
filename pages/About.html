@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/about.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=school" />
+  <title>About Us</title>
+
+</head>
+
+<body>
+
+  <!-- companyinfo -->
+
+  <div class="company-info">
+    <div class="heading">
+      <h1><span>Best</span></h1>
+      <h1>E-commerce Webiste</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facilis dicta tempore fugit eum eius ab
+        excepturi velit, illo reiciendis doloremque veritatis dolore ea laborum repellat.</p>
+
+      <div class="contact">
+        <h5>Call for Business</h5>
+        <p><i class="fa-solid fa-phone"></i>+977 985732327</p>
+      </div>
+
+    </div>
+
+    <img src="../aboutusphoto/watch.png" alt="watch">
+
+
+    <div class="social-media">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </div>
+
+  <!-- teammembers -->
+  <h1>Meet Our Team</h1>
+  <div class="main">
+    <div class="container">
+      <img src="../aboutusphoto/boy1.jpeg" alt="Nischal Rai">
+      <div class="text">
+        <h3>Nischal Rai</h3>
+        <p>UI</p>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="back">
+        <h3 ><span class="material-symbols-outlined"> school </span>Education</h3>
+        <p>High school from GoldenGate Int'l clg,Itahari, Graduated with distinction in 2022.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="../aboutusphoto/boy2.jpeg" alt="Kyani dyan Rai">
+      <div class="text">
+        <h3>Kyani dyan Rai</h3>
+        <p>UI</p>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="back">
+        <h3><span class="material-symbols-outlined">school</span>Education</h3>
+        <p>High school from VAC clg,Itahari,Graduated in 2022</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="../aboutusphoto/boy3.jpeg" alt="Rijan">
+      <div class="text">
+        <h3>Rijan</h3>
+        <p>UI</p>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="back">
+        <h3><span class="material-symbols-outlined">school</span>Education</h3>
+        <p> High school from Suryodaya English School,Damak,Passout in 2023</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="../aboutusphoto/boy4.jpeg" alt="Ronit">
+      <div class="text">
+        <p>UI</p>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="back">
+        <h3><span class="material-symbols-outlined">school</span>Education</h3>
+        <p>BIT in Itahari Int"l collage,Morang</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="../aboutusphoto/girl1.jpeg" alt="Smita Karki">
+      <div class="text">
+        <h3>Smita Karki</h3>
+        <p> UI</p>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="back">
+        <h3><span class="material-symbols-outlined">school</span>Education</h3>
+        <p>BIT in Itahari Int"l collage,Morang</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- feedback -->
+  <h1>Feedback Section</h1>
+  <div class="whole-form">
+    <form onsubmit="handlesubmit(event)">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email address" required>
+
+      <label for="subject">Subject</label>
+      <select id="subject" required>
+        <option value="">  Select a Subject </option>
+        <option value="order">Order Inquiry</option>
+        <option value="product">Product Information</option>
+        <option value="return">Return/Exchange</option>
+        <option value="support">Customer Support</option>
+        <option value="support">Feedback</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Enter your message here..." rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/3cead7a5a6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
