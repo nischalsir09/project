@@ -1,5 +1,4 @@
 import changer from "./pagechanger.js";
-import changess from "./productpagechanger.js";
 
 let load = false;
 const root = document.getElementById("root");
@@ -53,6 +52,3 @@ Array.from(paragraphs).forEach((data) => {
         loadPage(data.innerText);
     });
 });
-
-
-console.log(changess())
